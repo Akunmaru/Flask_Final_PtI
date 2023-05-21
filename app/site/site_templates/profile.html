@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<section class="bg-light text-center">
+    <div class="bg-image">
+        <img src="../../static/static/download.jpeg" class="img-fluid" alt="Dark alleyway ">
+        <div class="caption bg-opacity-10">
+            <br><br>
+            <span style="background-color: rgba(175, 57, 57, 0.489);" class="display-1 text-light">Bartender Details</span>
+            <br>
+            <span style="background-color: rgba(175, 57, 57, 0.489);" class="display-6 text-light">Email: {{ current_user.email }}</span>
+            <br>
+            <span style="background-color: rgba(175, 57, 57, 0.489);" class="display-6 text-light">Token: {{ current_user.token }}</span> 
+        </div>
+    </div>
+</section>
+{% endblock %}
